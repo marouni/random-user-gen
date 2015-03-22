@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random User Generator</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom01.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Raleway' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+	<header class="row">
+	    <h1>Random User Generator <small>Using Random Person API</small></h1>
+	</header>
+
+	<div class="row">
+	    	<image id="userImage" src="img/blank_pp.jpg" class="img-rounded" class="img-responsive"> </image>
+	</div>
+
+	<div class="row top-buffer">
+		<div class="col-md-3 col-xs-3">
+		    <ul id="userList01" class="list-group">
+		      <li id="firstName"> First Name : </li>
+		      <br>
+		      <li id="lastName"> Last Name : </li>
+		      <br>
+		      <li id="phone"> Phone : </li>
+		      <br>
+		      <li id="address"> Address : </li>
+		      <br>
+		      <li id="city"> City : </li>
+		    </ul>
+		</div>
+		
+		<div class="col-md-4 col-xs-4">
+		    <ul id="userList02"> 
+		      <li id="state"> State : </li>
+		      <br>
+		      <li id="zip"> Zip : </li>
+		      <br>
+		      <li id="username"> Username : </li>
+		      <br>
+		      <li id="email"> Email : </li>
+		      <br>
+		      <li> Email URL : <a id="emailUrl"></a> <br>
+		      <br>
+		      <li id="password"> Password : </li>
+		    </ul>
+		</div>	
+	
+	</div>
+
+	<div class="row top-buffer">
+	    <form action="">
+	      <input id="gender_male" type="radio" name="sex" value="male" checked="checked">Male
+	      <input id="gender_female" type="radio" name="sex" value="female">Female
+	    </form>
+	</div>
+	<div class="row top-buffer">
+	    <button type="button" id="exeButton" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Generate</button>
+	</div>
+    </div>
+
+    <script src="js/ug.js"> </script>
+  </body>
+</html>
